@@ -25,9 +25,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
 }
 
 .main-container {
@@ -85,13 +83,17 @@ header img{
     padding-right: 50px;
 }
 
+nav {
+    margin-top: 2px;
+}
+
 nav a {
     margin-left: 68px;
-    padding-top: 5px;
 }
 
 nav a:hover {
-    border-top: solid blue 2px;
+    border-top: solid #0065FC 2px;
+    color: #0065FC;
 }
 /****** Section Info-group *******/
 
@@ -234,7 +236,6 @@ nav a:hover {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
@@ -249,6 +250,7 @@ nav a:hover {
     flex-direction: column;
     justify-content: space-between;
     gap: 30px;
+    background-color: #F2F2F2;
 }
 
 .titre-hebergement h2{
@@ -322,6 +324,7 @@ nav a:hover {
 .populaires {
     width: 32%;
     height: 611px;
+    background-color: #F2F2F2;
 }
 
 .populaires-title {
@@ -510,6 +513,9 @@ ul{
     .activites{
         height: 390px;
     }
+    .acti-text {
+        padding: 10px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -526,6 +532,7 @@ ul{
         width: 50%;
         text-align: center;
         padding-bottom: 5px;
+        border-bottom: 2px solid #F2F2F2;
     }
     nav{
         display: flex;
@@ -534,9 +541,9 @@ ul{
         justify-content: space-around;
     }
     nav a:hover{
-        border-bottom: blue solid 2px;
+        border-bottom: #0065FC solid 2px;
         border-top: none;
-        color: blue;
+        color: #0065FC;
     }
     header img{
         padding: 30px;
@@ -628,6 +635,7 @@ ul{
     .hebergements{
         height: 1440px;
         gap: 15px;
+        background-color: #FFFFFF;
     }
     #ancre-a{
         background-color: white;
@@ -668,6 +676,7 @@ ul{
         width: 100%;
     }
 }
+
 @media (max-width: 370px) {
     .info-group{
         padding: 0;
